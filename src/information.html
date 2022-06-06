@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page">
+        <!-- 页头 -->
+        <div class="begin">
+            <img src="./images/u15.png" alt="">
+            <p> 蜗牛考试系统 </p>
+            <p class="name" style="color: rgb(231, 197, 32);"> 张三</p>
+            <div class="circle"> </div>
+        </div>
+        <!-- 标题部分 -->
+        <div class="title">
+
+            <a href="examinationbank.html">
+                < 返回重选试卷 </a>
+                    <span> 2021年第三季度Vue.js知识模拟考试 </span>
+        </div>
+        <!-- 左边信息页 -->
+        <div class="testpaper">
+            <p>试卷信息 </p>
+            <hr>
+            <p> 考试类型：<span>模拟 </span> </p>
+            <hr>
+            <p> 考试时间：<span>3月22日至3月30日</span></p>
+            <hr>
+            <p> 答卷时间：<span>30分钟 </span></p>
+            <hr>
+            <p>考试方式：<span>线上 </span> </p>
+
+
+        </div>
+        <!-- 右边信息 -->
+        <div class="candidate">
+            <p> 考生信息 </p>
+            <hr>
+            <p> 姓&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名: <span> 波波老师 </span> </p>
+            <hr>
+            <p> 证件号码:<span>532101199103014545 </span> </p>
+            <hr>
+            <p> 部&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp门: <span> 信息中心 </span> </p>
+            <hr>
+            <p> </p>
+        </div>
+
+        <p class="hint"> 温馨提示:开始考试后会启动计时器，交卷时间到系统将自动提交分数，请考生检查答题是否完毕</p>
+        <!-- 考试须知 -->
+        <div class="notes">
+            <p> 考试须知</p>
+            <hr>
+            <p> A-Level考试开始: </p>
+            <p> 1、拿到考卷后,在老师指示下,仔细阅读封面的指示(ps:这一点要特别注意，看清要求！）。</p>
+            <p>2、不要在老师指示之前翻开试卷阅读题目。 </p>
+            <p> 3、不要在桌面上写字,所有的过程应该写在考纸上。</p>
+
+            <p>A-Level考试中途: </p>
+
+            <p> 1、A-Level考试中如遇特殊情况,需暂时离开考场,需A-Level考试中心工作人员陪同。</p>
+            <p>2、考生不能互借文具,交头接耳,影响考场秩序。 </p>
+            <p>3、对于试卷内容如有疑问,要举手进行提问。 </p>
+            <p>4、考生迟到不足一小时允许完成整场A-Level考试(时间顺延）。 </p>
+            <p>A-Level考试结束: </p>
+
+            <p>1、所有的答题纸,试卷，都需要被收回。 </p>
+            <p>2、把带进考场的东西一并带走。 </p>
+            <p> 3、出考场时要保持安静,避免打扰到其它A-Level考试学生。</p>
+            <p>希望学生们在考场上以平常心对待，认真阅读试题要求，从简到难逐个击破，考出好成绩！ </p>
+
+
+
+        </div>
+        <a href="javascript:;" class="start" id="start"> 开始考试 </a>
+        <!-- 修改信息 -->
+        <a href="" class="modifies"> 信息有误?去修改</a>
+
+    </div>
+
+
+    <!-- <script>
+        $axure.internal(function ($ax) {
+    if ((IOS && SAFARI) || SHARE_APP) {
+        var outerHtml = document.documentElement;
+        outerHtml.id = 'ios-safari';
+        var html = document.createElement('html');
+        html.id = 'ios-safari-html';
+        outerHtml.appendChild(html);
+        var body = document.body;
+        html.appendChild(body);
+        Object.defineProperty(document, 'body', {
+            get: function () {
+                return body;
+            }
+        });
+        var fixedBody = document.createElement('body');
+        fixedBody.id = 'ios-safari-fixed';
+        outerHtml.appendChild(fixedBody);
+        var fixedBase = document.createElement('div');
+        fixedBase.id = 'base-fixed';
+        fixedBody.appendChild(fixedBase);
+
+        var isDevice = false;
+        var deviceWidth = 0;
+        var updateHtmlWidth = function (panelWidthOffset, scale, height, scaleN) {
+            var iosSafHtml = $('#ios-safari-html');
+            iosSafHtml.css('overflow', '');
+            iosSafHtml.css('overflow-x', '');
+            iosSafHtml.css('height', '');
+            if (isDevice) {
+                iosSafHtml.width(deviceWidth / scaleN);
+                iosSafHtml.css('overflow-x', 'hidden');
+            } else {
+                var isLandscape = window.orientation != 0 && window.orientation != 180;
+                var mobileWidth = isLandscape ? window.screen.height : window.screen.width
+                iosSafHtml.width((mobileWidth - panelWidthOffset) / scaleN);
+            }
+            if (scale == 1) {
+                iosSafHtml.css('overflow-x', 'hidden');
+                iosSafHtml.css('height', (height / scaleN) + 'px');
+            } else if (scale == 2) iosSafHtml.css('overflow', 'hidden');
+        };
+
+        updateHtmlWidth(0);
+
+        $axure('*').each(function (obj, element) {
+            if (obj && obj.fixedVertical && obj.fixedKeepInFront) {
+                var parent = $axure('#' + element).getParents(false, ['item', 'state'])[0];
+                if (!parent) {
+                    $('#base-fixed').append($('#' + element));
+                }
+            }
+        });
+
+        $axure.messageCenter.addMessageListener(function (message, data) {
+            if (message == "setContentScale") {
+                updateHtmlWidth(data.panelWidthOffset, data.scale, data.viewportHeight, data.scaleN);
+            } else if (message == "setDeviceMode") {
+                isDevice = data.device && !data.scaleToWidth;
+                if (isDevice) deviceWidth = data.width;
+                updateHtmlWidth(0);
+            }
+        });
+
+
+        $('#ios-safari-html').scroll(function () {
+            $axure.updateWindowInfo();
+        });
+        
+        var scrollStartY;
+        var maxScrollY
+        var touchStart;
+        $axure('*').each(function (obj, element) {
+            if (obj && obj.scrollbars && obj.scrollbars.toLowerCase() != 'none') {
+                if (obj.scrollbars == 'horizontalAsNeeded') return;
+
+                $('#' + element).on('touchstart', function (e) {
+                    touchStart = e.pageY;
+                    var stateId = $ax.visibility.GetPanelState($('#' + element).attr('id'));
+                    scrollStartY = $('#' + stateId).scrollTop();
+                    maxScrollY = $('#' + stateId)[0].scrollHeight - $('#' + stateId).height();
+                });
+
+                $('#' + element).on('touchmove', function (e) {
+                    if (maxScrollY <= 0) return false;
+                    if (scrollStartY == 0 && e.pageY > touchStart) e.preventDefault();
+                    if (scrollStartY == maxScrollY && e.pageY < touchStart) e.preventDefault();
+                });
+            }
+        });        
+    }
+});
+    </script> -->
+</body>
+
+</html>

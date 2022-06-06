@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- nav头部 -->
+  <nav>
+    <div class="container">
+      <a href="javascript:;" class="logo">
+        <img src="./images/logo.png" alt="">
+      </a>
+      <span class="nav-text">蜗牛考试系统</span>
+      <div class="nav-right">
+        <div class="user">
+        </div>
+        <div class="user-name">
+          <span>蜗牛测试账号</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- header -->
+  <header>
+    <div class="container">
+      <a href="javascript:;" id="back">
+        <img src="./images/jiantou.svg" alt="">
+        返回
+      </a>
+      <span id="title">
+      </span>
+      <div class="jiexi">
+        解析
+      </div>
+    </div>
+  </header>
+
+  <!-- 页面主体部分 -->
+  <section>
+    <div class="container clearfix">
+      <!-- 左侧题目 -->
+      <div class="subject" >
+        <div class="subject-bg">
+          <ul class="subject-ul" id="subject">
+
+          </ul>
+        </div>
+        
+      </div>
+
+      <!-- 右侧考试信息 -->
+      <div class="info">
+        <!-- 考试信息 -->
+        <div class="info-title">
+          <div class="time-remaining">
+            考试时间：<span id="countDown"></span>
+          </div>
+          <div class="time-remaining">
+            考试类型：<span id="testType"></span>
+          </div>
+        </div>
+        <!-- 答题卡 -->
+        <div class="crad clearfix">
+          <span class="sheet">答题卡</span>
+          <span class="state">错误<em id="subjectNums"></em>题</span>
+        </div>
+
+        <!-- 题目编号 -->
+        <div class="numbers clearfix" id="numbers">
+          
+        </div>
+
+        <!-- <button type="submit" class="paperBtn" id="paperBtn">交卷</button> -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 遮罩层 -->
+  <!-- <div class="mask-layer" id="maskLayer">
+    
+  </div> -->
+
+  <!-- 交卷模态框 -->
+  <!-- <div class="submitModel" id="submitModel">
+    <div class="title">
+      <span>交卷确认</span>
+    </div>
+    <div class="model-body">
+      <div>
+        总题数: <span id="totelSubjectNums">12</span>
+      </div>
+      <div>
+        已答题：<span id="answer">10</span>
+      </div>
+      <div>
+        未答题：<span id="unanswered">2</span>
+      </div>
+    </div>
+    <div class="model-footer">
+      <a href="javascript:;" id="checkAgain">再检查一下</a>
+      <a href="javascript:void(0)" id="submitBtn"> 交卷</a>
+    </div>
+  </div> -->
+
+</body>
+
+</html>

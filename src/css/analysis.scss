@@ -1,0 +1,414 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: rgb(242, 242, 242);
+}
+
+// nav
+nav {
+  height: 50px;
+  background-color: white;
+
+  .container {
+    a {
+      float: left;
+      margin-top: 10px;
+      padding-right: 10px;
+      height: 50px;
+
+      img {
+        height: 35px;
+      }
+    }
+
+    .nav-text {
+      line-height: 50px;
+      font-size: 20px;
+      color: rgb(69, 148, 213);
+    }
+
+    .nav-right {
+      float: right;
+
+      .user {
+        float: left;
+        width: 35px;
+        height: 35px;
+        background-color: blue;
+        margin-top: 8px;
+        border-radius: 50%;
+      }
+
+      .user-name {
+        float: left;
+        margin-left: 15px;
+        font-size: 16px;
+        color: #43972a;
+        line-height: 50px;
+      }
+    }
+  }
+}
+
+// header
+header {
+  margin-top: 12px;
+
+  .container {
+    height: 60px;
+    background-color: white;
+
+    a {
+      float: left;
+      line-height: 60px;
+      color: black;
+
+      img {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        padding: 5px 10px;
+      }
+    }
+
+    span {
+      float: left;
+      line-height: 60px;
+      margin-left: 280px;
+      font-size: 22px;
+    }
+    .jiexi {
+      float: right;
+      width: 80px;
+      height: 40px;
+      color: #fff;
+      background-color: #3981f7;
+      text-align: center;
+      line-height: 40px;
+      margin-top: 10px;
+      border-radius: 10px 0 0 10px;
+    }
+
+  }
+}
+
+section {
+  margin-top: 15px;
+  
+  .container {
+    // 左侧题目
+    .subject {
+      float: left;
+      width: 890px;
+      height: 600px;
+      overflow: auto;
+      // overflow-x: hidden;
+      box-sizing: border-box;
+      // .subject-select {
+      //   display: none;
+      // }
+      .subject-bg {
+        width: 870px;
+        overflow-x: hidden;
+      }
+
+      .subject-ul {
+        // width: 400%;
+        transition: all 0.5s ease;
+      }
+      .subject-item {
+        position: relative;
+        float: left;
+        width: 870px;
+        // overflow:auto;
+        min-height: 600px;
+        background-color: #fff;
+        box-sizing: border-box;
+        padding: 10px 35px 100px 35px;
+        
+      }
+      // 左侧的标题
+      .sub-title {
+        box-sizing: border-box;
+        padding: 20px 0;
+        border-bottom: 1px solid #eee;
+        font-size: 14px;
+        color: #43972a;
+
+        div {
+          &:first-child {
+            float: left;
+          }
+
+          &:last-child {
+            float: right;
+          }
+        }
+      }
+
+      // 题干
+      .analysis {
+        // font-size: 16px;
+        line-height: 25px;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 30px 0;
+      }
+
+      // 选项
+      .options {
+        .option-item {
+          margin: 10px 0 30px 0;
+          cursor: pointer;
+          .option {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #f2f2f2;
+            color: #999;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+
+          }
+          .active {
+            background-color: rgb(67, 151, 42);
+            color: white;
+          }
+          .studentcheck {
+            background-color: yellow;
+            color: #000;
+          }
+          .answer {
+            color: #666666;
+          }
+        }
+      }
+      .parsing {
+        bottom: 100px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 20px;
+        background-color: #f2f2f2;
+        color: #818181;
+        font-size: 14px;
+        .sAnswer {
+          line-height: 30px;
+          .rightOrWrong {
+            float: right;
+            width: 60px;
+            height: 30px;
+            color: #fff;
+            text-align: center;
+          }
+          .right {
+            background-color: rgb(67, 151, 42);
+          }
+          .wrong {
+            background-color: #ea3323;
+          }
+          .analysis {
+            font-size: 12px !important;
+          }
+          .analysisWrongPic {
+            display: none;
+            padding-left: 10px;
+            width: 30px;
+            vertical-align: middle;
+          }
+          .analysisRightPic{
+            display: none;
+            padding-left: 10px;
+            width: 40px;
+            vertical-align: middle;
+          }
+        }
+
+      }
+
+      //下一题
+      .sub-btn {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        margin: 0 auto;
+        // margin-top: 30px;
+        width: 260px;
+        height: 40px;
+        background-color: blue;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    // 右侧信息
+    .info {
+      float: right;
+      width: 290px;
+      height: 600px;
+      position: relative;
+      .info-title {
+        background-color: #fff;
+        .time-remaining {
+          font-size: 16px;
+          box-sizing: border-box;
+          padding: 10px 20px;
+          span {
+            color: #ea3323;
+          }
+          &:first-child {
+            border-bottom: 1px solid #eee;
+          }
+        }
+      }
+
+      //答题卡
+      .crad {
+        width: 100%;
+        background-color: #fff;
+        box-sizing: border-box;
+        margin-top: 10px;
+        padding: 10px 20px;
+        .sheet {
+          float: left;
+        }
+        .state {
+          float: right;
+          font-size: 14px;
+          color: #ea3323;
+          em {
+            font-style: normal;
+          }
+        }
+      }
+      //题目编号
+      .numbers {
+        margin-top: 10px;
+        .number-item {
+          position: relative;
+          cursor: pointer;
+          float: left;
+          width: 50px;
+          height: 50px;
+          box-shadow: 0 0 7px rgba(0, 0, 0 ,.5);
+          background-color: #fff;
+          text-align: center;
+          line-height: 50px;
+          margin-right: 10px;
+          margin-bottom: 10px;
+          &:nth-child(5n){
+            margin-right: 0;
+          }
+          .wrongPic {
+            display: none;
+            position: absolute;
+            width: 10px;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          .rightPic {
+            display: none;
+            position: absolute;
+            width: 10px;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          
+        }
+        .select {
+          background: url('../images/pen.svg') no-repeat;
+          background-position: center center;
+          background-color: #515151;
+        }
+        .checked {
+          background-color: green;
+          color: #fff;
+        }
+      }
+      .paperBtn {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        background-color: #43972a;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+    }
+  }
+}
+
+.submitModel {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  width: 450px;
+  height: 250px;
+  transform: translate(-50%,-50%);
+  z-index: 999;
+  .title {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+  }
+  .model-body {
+    box-sizing: border-box;
+    padding: 20px 50px;
+    border-bottom: 1px solid #eee;
+    div {
+      padding: 10px 0;
+      color: #999999;
+      &:last-child {
+        color: #ef6458;
+      }
+    }
+  }
+  .model-footer {
+    font-size: 0;
+    a {
+      display: inline-block;
+      height: 45px;
+      width: 50%;
+      text-align: center;
+      line-height: 45px;
+      &:first-child {
+        color: #666666;
+        font-size: 16px;
+      }
+      &:last-child {
+        background-color: #5cc94d;
+        color: #fff;
+        font-size: 16px;
+
+      }
+    }
+  
+  }
+}
+
+.mask-layer {
+  display: none;
+  position: fixed;
+  left: 0;
+  height: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(47, 79, 79,.45);
+}

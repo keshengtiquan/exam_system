@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <meta http-equiv="refresh" content="5"> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页</title>
+  <!-- <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header class="head">
+    <!-- 左边 -->
+    <div class="head_left">
+      <img src="./images/logo.png" alt="蜗牛学院">
+      <span>蜗牛考试系统</span>
+    </div>
+    <!-- 右边 -->
+    <div class="head_right">
+      <i></i>
+      <img alt="" width="35px" height="35px">
+      <span id="userName"></span>
+      <img src="./images/QQ图片20210804215850.png" alt="设置">
+      <div class="updatauser">
+        <ul>
+          <li>换个账号</li>
+          <li>退出登录</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="w">
+    <nav>
+      <a href="./examinationbank.html" class="test">
+        <span>正在考试</span>
+        <img src="http://47.98.128.191:3001/images/%E4%B8%BB%E9%A1%B5/u276.svg" alt="">
+      </a>
+      <a href="./examinationbank.html" class="simulation">
+        <span>模拟考试</span>
+        <img src="http://47.98.128.191:3001/images/%E4%B8%BB%E9%A1%B5/u279.svg" alt="">
+      </a>
+      <a href="./examinationbank.html" class="dailyTest">
+        <span>每日一测</span>
+        <img src="http://47.98.128.191:3001/images/%E4%B8%BB%E9%A1%B5/u270.svg" alt="">
+      </a>
+      <a href="./examinationbank.html" class="orderPractice">
+        <span>顺序练习</span>
+        <img src="http://47.98.128.191:3001/images/%E4%B8%BB%E9%A1%B5/u273.svg" alt="">
+      </a>
+      <a href="./examinationbank.html" class="practice">
+        <span>分类练习</span>
+        <img src="http://47.98.128.191:3001/images/%E4%B8%BB%E9%A1%B5/u282.svg" alt="">
+      </a>
+    </nav>
+    <section class="main">
+      <div class="main_head">
+        <span class="nav_bg"></span>
+        <ul id="nav">
+          <li class="active">首页</li>
+          <li>我的收藏(共 <span></span>题)</li>
+          <li>错题库(共 <span></span>题)</li>
+        </ul>
+        <p>
+          <img src="http://47.98.128.191:3001/images/%E4%B8%BB%E9%A1%B5/u262.svg" alt="排行榜">
+          <span>排行榜</span>
+        </p>
+      </div>
+      <div class="main_content">
+        <ul id="content">
+          <li>
+            <!-- //数据看板 -->
+            <div class="con1_head">
+              <div>
+                <h3 style="font-weight: 400">数据看板</h3>
+                <div>
+                  <div>
+                    <h2>138</h2>
+                    <p>练习题数</p>
+                  </div>
+                  <div>
+                    <h2>23</h2>
+                    <p>学习天数</p>
+                  </div>
+                  <div>
+                    <h2>88分</h2>
+                    <p>最近考试</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <p>
+                    今日未学习
+                  </p>
+                  <img src="./images/Snipaste_2021-08-04_16-11-22.png" alt="">
+                </div>
+                <div>
+                  <span>12 <i></i></span>
+                  <span>12 <i></i></span>
+                  <span>12 <i></i></span>
+                  <span>12</span>
+                  <span>12 <i></i></span>
+                  <span>12</span>
+                  <span>12</span>
+                </div>
+              </div>
+            </div>
+            <!-- 通知公告 -->
+            <div class="notice">
+              <div>
+                <h2 style="font-weight: 400; color: rgb(51, 51, 51);">通知公告</h2>
+                <span id="notice_all">
+                  <span>全部</span>
+                  <i></i>
+                </span>
+                <ul class="notice_title">
+                  <li>全部</li>
+                  <li>已读</li>
+                  <li>未读</li>
+                </ul>
+              </div>
+              <ul class="notice_main">
+                <li class="unread">
+                  <p>
+                    中央第十一巡视组巡视中国南方电网有限责任公司党组工作动员会召开
+                    <span style="color: red;">[未读]</span>
+                  </p>
+                  <span>2019-04-13 12:34</span>
+                </li>
+                <li class="unread">
+                  <p>
+                    公司召开“互联网+”平台业务开展工作研讨会
+                    <span style="color: red;">[未读]</span>
+                  </p>
+                  <span>2019-04-13 12:34</span>
+                </li>
+                <li class="unread">
+                  <p>
+                    关于组织2019年电力作业知识考试的通知【重要】
+                    <span style="color: red;">[未读]</span>
+                  </p>
+                  <span>2019-04-13 12:34</span>
+                </li>
+                <li class="read">
+                  <p>
+                    关于安全管理和生产规范的统一技术培训会议通知
+                  </p>
+                  <span>2019-04-13 12:34</span>
+                </li>
+                <li class="read">
+                  <p>
+                    中央第十一巡视组巡视中国南方电网有限责任公司党组工作动员会召开
+                  </p>
+                  <span>2019-04-13 12:34</span>
+                </li>
+                <li class="read">
+                  <p>
+                    中国xxxxxx有限责任公司企业负责人2017年度薪酬信息披露
+                  </p>
+                  <span>2019-04-13 12:34</span>
+                </li>
+              </ul>
+            </div>
+            <div class="more">
+              查看更多数据
+            </div>
+          </li>
+          <li>
+            <div class="colltion_list">
+              <ul class="collection"></ul>
+            </div>
+            <div class="topicCard">
+              <span>题卡</span>
+              <p>共<span class="number"></span>题</p>
+              <div class="numBtn"></div>
+              <div class="foot_choose">
+                默认显示解释
+                <div class="slider_right">
+                  <div class="slider_small"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="colltion_list">
+              <ul class="error"></ul>
+            </div>
+            <div class="topicCard">
+              <span>题卡</span>
+              <p>共<span class="number"></span>题</p>
+              <div class="numBtn"></div>
+              <div class="foot_choose">
+                默认显示解释
+                <div class="slider_right">
+                  <div class="slider_small"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <!-- 信息修改模态框 -->
+  <form>
+    <div class="infobg">
+      <div class="infoModel">
+        <p>
+          <span> 修改资料</span>
+          <img src="http://47.98.128.191:3001/images/%E4%B8%BB%E9%A1%B5/u377.svg" alt="">
+        </p>
+        <div class="prompt">
+          <img src="http://47.98.128.191:3001/images/%E4%B8%BB%E9%A1%B5/u363.svg" alt="">
+          <span>你可以在这里对个人资料进行修改完善</span>
+        </div>
+        <ul>
+          <li>
+            <span>手机号</span>
+            <span id="phone"></span>
+            <span style="font-size: 14px; color:#666;margin-left: 30px;">* 手机号暂时不允许进行修改，如需修改，请联系我们</span>
+          </li>
+          <li id="avatar">
+            <span>设置头像</span>
+            <img width="80" height="80">
+            <input type="file" style="margin-left: 50px;">
+          </li>
+          <li class="name">
+            <span>姓名</span>
+            <input type="text">
+          </li>
+          <li class="gender">
+            <span>性别</span>
+            <input type="radio" name="gender" value="男">男
+            &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="gender" value="女">女
+          </li>
+          <li>
+            <span>选择部门</span>
+            <img src="./images/u379.png" alt="">
+          </li>
+        </ul>
+        <div class="btn">
+          <button type="button">关闭</button>
+          <button type="submit">提交保存</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <!-- 公告模态框 -->
+  <div class="msg">
+    <div class="msgModel">
+      <div class="msg_head">
+        <span>
+          <img src="http://47.98.128.191:3001/images/%E4%B8%BB%E9%A1%B5/u348.svg" alt="">
+        </span>
+        <p>
+          中央第十一巡视组巡视xxxxxx有限责任公司党组工作动员会召开
+        </p>
+        <p>
+          <span>
+            信息中心
+          </span>
+          <span>
+            2019-04-13 12:34
+          </span>
+        </p>
+      </div>
+      <div class="msg_body">
+        <p>
+          第一，中国特色社会主义是社会主义而不是其他什么主义，科学社会主义基本原则不能丢，丢了就不是社会主义。我们党始终强调，中国特色社会主义，既坚持了科学社会主义基本原则，又根据时代条件赋予其鲜明的中国特色。这就是说，中国特色社会主义是社会主义，不是别的什么主义。一个国家实行什么样的主义，关键要看这个主义能否解决这个国家面临的历史性课题。在中华民族积贫积弱、任人宰割的时期，各种主义和思潮都进行过尝试，资本主义道路没有走通，改良主义、自由主义、社会达尔文主义、无政府主义、实用主义、民粹主义、工团主义等也都“你方唱罢我登场”，但都没能解决中国的前途和命运问题。是马克思列宁主义、毛泽东思想引导中国人民走出了漫漫长夜、建立了新中国，是中国特色社会主义使中国快速发展起来了。不说更早的时期，就从改革开放开始，特别是苏联解体、东欧剧变以后，唱衰中国的舆论在国际上不绝于耳，各式各样的“中国崩溃论”从来没有中断过。但是，中国非但没有崩溃，反而综合国力与日俱增，人民生活水平不断提高，“风景这边独好”。历史和现实都告诉我们，只有社会主义才能救中国，只有中国特色社会主义才能发展中国，这是历史的结论、人民的选择。
+        </p>
+        <p>
+          近些年来，国内外有些舆论提出中国现在搞的究竟还是不是社会主义的疑问，有人说是“资本社会主义”，还有人干脆说是“国家资本主义”、“新官僚资本主义”。这些都是完全错误的。我们说中国特色社会主义是社会主义，那就是不论怎么改革、怎么开放，我们都始终要坚持中国特色社会主义道路、中国特色社会主义理论体系、中国特色社会主义制度，坚持党的十八大提出的夺取中国特色社会主义新胜利的基本要求。这就包括在中国共产党领导下，立足基本国情，以经济建设为中心，坚持四项基本原则，坚持改革开放，解放和发展社会生产力，建设社会主义市场经济、社会主义民主政治、社会主义先进文化、社会主义和谐社会、社会主义生态文明，促进人的全面发展，逐步实现全体人民共同富裕，建设富强民主文明和谐的社会主义现代化国家；包括坚持人民代表大会制度的根本政治制度，中国共产党领导的多党合作和政治协商制度、民族区域自治制度以及基层群众自治制度等基本政治制度，中国特色社会主义法律体系，公有制为主体、多种所有制经济共同发展的基本经济制度。这些都是在新的历史条件下体现科学社会主义基本原则的内容，如果丢掉了这些，那就不成其为社会主义了。
+        </p>
+        <p>
+          邓小平同志曾经深刻地、总结性地指出：“我们的现代化建设，必须从中国的实际出发。无论是革命还是建设，都要注意学习和借鉴外国经验。但是，照抄照搬别国经验、别国模式，从来不能得到成功。这方面我们有过不少教训。”过去不能搞全盘苏化，现在也不能搞全盘西化或者其他什么化。冷战结束后，不少发展中国家被迫采纳了西方模式，结果党争纷起、社会动荡、人民流离失所，至今都难以稳定下来。《庄子·秋水》中写道：“且子独不闻夫寿陵余子之学行于邯郸与?未得国能，又失其故行矣，直匍匐而归耳。”我们千万不能“邯郸学步，失其故行”。我们就是把马克思主义中国化，就是搞中国特色社会主义。近年来，随着我国综合国力和国际地位上升，国际上关于“北京共识”、“中国模式”、“中国道路”等议论和研究也多了起来，其中不乏赞扬者。一些外国学者认为，中国的快速发展，导致一些西方理论正在被质疑，一种新版的马克思主义理论正在颠覆西方的传统理论。我们始终认为，各国的发展道路应由各国人民选择。所谓的“中国模式”是中国人民在自己的奋斗实践中创造的中国特色社会主义道路。我们坚信，随着中国特色社会主义不断发展，我们的制度必将越来越成熟，我国社会主义制度的优越性必将进一步显现，我们的道路必将越走越宽广，我国发展道路对世界的影响必将越来越大。我们就是要有这样的道路自信、理论自信、制度自信，真正做到“千磨万击还坚劲，任尔东西南北风”。
+        </p>
+        <p>
+          第二，我们党领导人民进行社会主义建设，有改革开放前和改革开放后两个历史时期，这是两个相互联系又有重大区别的时期，但本质上都是我们党领导人民进行社会主义建设的实践探索。中国特色社会主义是在改革开放历史新时期开创的，但也是在新中国已经建立起社会主义基本制度并进行了20多年建设的基础上开创的。正确认识这个问题，要把握3个方面。一是，如果没有1978年我们党果断决定实行改革开放，并坚定不移推进改革开放，坚定不移把握改革开放的正确方向，社会主义中国就不可能有今天这样的大好局面，就可能面临严重危机，就可能遇到像苏联、东欧国家那样的亡党亡国危机。同时，如果没有1949年建立新中国并进行社会主义革命和建设，积累了重要的思想、物质、制度条件，积累了正反两方面经验，改革开放也很难顺利推进。二是，虽然这两个历史时期在进行社会主义建设的思想指导、方针政策、实际工作上有很大差别，但两者决不是彼此割裂的，更不是根本对立的。我们党在社会主义建设实践中提出了许多正确主张，当时没有真正落实，改革开放后得到了真正贯彻，将来也还是要坚持和发展的。马克思早就说过：“人们自己创造自己的历史，但是他们并不是随心所欲地创造，并不是在他们自己选定的条件下创造，而是在直接碰到的、既定的、从过去承继下来的条件下创造。”三是，对改革开放前的历史时期要正确评价，不能用改革开放后的历史时期否定改革开放前的历史时期，也不能用改革开放前的历史时期否定改革开放后的历史时期。改革开放前的社会主义实践探索为改革开放后的社会主义实践探索积累了条件，改革开放后的社会主义实践探索是对前一个时期的坚持、改革、发展。对改革开放前的社会主义实践探索，要坚持实事求是的思想路线，分清主流和支流，坚持真理，修正错误，发扬经验，吸取教训，在这个基础上把党和人民事业继续推向前进。
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src=""></script>
+</body>
+
+</html>

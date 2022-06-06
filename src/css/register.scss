@@ -1,0 +1,132 @@
+
+    #bag {
+    width: 1480px;
+    height: 799px;
+    background-image: url(../images/u1.png);
+    background-size: cover;
+
+
+  }
+
+  .login-in {
+    border: 1px solid #ccc;
+    background-color: white;
+    width: 420px;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    border-radius: 7px;
+  }
+
+  .login-in img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 40%;
+    top: 10%;
+
+  }
+
+  .login-in p {
+    color: rgb(65, 149, 213);
+    font-weight: 700;
+    font-size: large;
+    position: absolute;
+    left: 35%;
+    top: 20%;
+
+  }
+
+  .login-in div input {
+    width: 400px;
+    height: 45px;
+    border: 2px solid rgb(233, 233, 233);
+    position: absolute;
+    left: 8px;
+    top: 40%;
+    border-radius: 5px;
+  }
+
+  .message {
+    width: 400px;
+    height: 45px;
+    /* border: 2px solid rgb(233, 233, 233); */
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    border-radius: 5px;
+  }
+
+  .get {
+    display: inline-block;
+
+    width: 120px;
+    height: 49px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    /* justify-content: center; */
+    line-height: 49px;
+    color: white;
+    position: absolute;
+    left: 295px;
+    top: 47%;
+    background-color: rgb(0, 153, 255);
+
+  }
+
+  /* 登录密码样式 */
+  .log {
+    width: 400px;
+    height: 45px;
+    border: 2px solid rgb(233, 233, 233);
+
+    position: absolute;
+    left: 8px;
+    top: 65%;
+    border-radius: 5px;
+  }
+
+  /* 确认密码样式 */
+  .confirmed {
+    width: 400px;
+    height: 45px;
+    border: 2px solid rgb(233, 233, 233);
+
+    position: absolute;
+    left: 8px;
+    top: 75%;
+    border-radius: 5px;
+  }
+
+  .re {
+    text-decoration: none;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    background-color: rgb(0, 124, 255);
+    width: 400px;
+    height: 45px;
+    border: 2px solid rgb(0, 124, 255);
+    position: absolute;
+    left: 8px;
+    top: 85%;
+    border-radius: 5px;
+  }
+
+  .login-in a {
+    text-decoration: none;
+
+
+  }
+
+  .right {
+    position: absolute;
+    left: 150px;
+    top: 95%;
+    float: right;
+    color: rgb(172, 172, 172);
+  }

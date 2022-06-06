@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 微软雅黑, arial;
+    background-color: #f5f5f5;
+}
+.container {
+    width: 1200px;
+    margin: auto;
+}
+.clearfix::after,
+.clearfix::before {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+a {
+    text-decoration: none;
+}
+ul,li {
+    list-style: none;
+}
+input {
+    outline: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}

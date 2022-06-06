@@ -1,0 +1,179 @@
+.page {
+  width: 1480px;
+  height: 799px;
+  background-color: rgb(242, 242, 242);
+  /* position: relative; */
+
+}
+
+.begin {
+  width: 1480px;
+  height: 40px;
+  background-color: white;
+
+
+
+}
+
+.begin img {
+  width: 17px;
+  height: 17px;
+  margin-left: 65px;
+  margin-top: 8.5px;
+
+}
+
+.begin p {
+  color: rgb(65, 149, 213);
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-block;
+
+
+
+}
+
+.name {
+  float: right;
+  margin-top: 8px;
+  margin-right: 63px;
+
+}
+
+.circle {
+  margin-top: 8px;
+  margin-right: 10px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: blue;
+  float: right;
+  /* margin-right:101px ; */
+}
+
+.title {
+  width: 864px;
+  height: 52px;
+  line-height: 52px;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 24px auto;
+  background-color: white;
+  text-align: center;
+  position: relative;
+
+}
+
+.title a {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 25px;
+
+
+
+}
+
+/* 左边信息 */
+.testpaper {
+  width: 411px;
+  /* height:186px ; */
+  border: 1px solid rgb(255, 255, 255);
+  background-color: white;
+  margin-left: 311px;
+  margin-top: 14px;
+  border-radius: 5px;
+
+
+}
+
+/* 修改下划线颜色 */
+hr {
+  background-color: #ccc;
+  height: 1px;
+  border: none;
+}
+
+.testpaper p {
+  margin-left: 26px;
+}
+
+.testpaper span {
+  color: red;
+}
+
+/* 右边 */
+.candidate {
+
+  width: 411px;
+  height: 269px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: white;
+  /* margin-right: 313px;
+  margin-top: 14px; */
+  border-radius: 5px;
+  position: absolute;
+  right: 313px;
+  top: 149px;
+
+}
+
+.candidate p {
+  margin-left: 26px;
+}
+
+.candidate span {
+  color: red;
+
+}
+
+/* 温馨提示样式 */
+.hint {
+  margin-left: 311px;
+}
+
+.notes {
+  margin: 17px auto;
+  width: 864px;
+  height: 272px;
+  background-color: white;
+  overflow: scroll;
+
+
+}
+
+.notes p {
+
+  margin-left: 8px;
+
+}
+
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 387px;
+  height: 34px;
+  background-color: rgb(0, 78, 231);
+  text-decoration: none;
+  color: white;
+  margin: 0 auto;
+}
+
+.modifies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(25, 158, 216);
+  position: absolute;
+  right: 313px;
+  top: 150px;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  width: 98px;
+  height: 29px;
+  border-radius: 15px 0 0 15px;
+
+
+}
